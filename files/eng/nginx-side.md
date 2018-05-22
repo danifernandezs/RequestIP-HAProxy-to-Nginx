@@ -6,13 +6,14 @@ We need to config the **balancer ip** to the nginx configuration and change the 
 
 At the beginning of the file, add the real balancer ip and config to work under the proxy_protocol.
 
->**set_real_ip_from** XXX.XXX.XXX.XXX;      **#HAProxy Balancer - Real IP**
-real_ip_header **proxy_protocol**;
+	**set_real_ip_from** XXX.XXX.XXX.XXX;      **#HAProxy Balancer - Real IP**
+	real_ip_header **proxy_protocol**;
 
 At virtual host area, change the default_server with **proxy_protocol**
->listen 80 **proxy_protocol**;
 
->listen 443 ssl **proxy_protocol**;
+
+	listen 80 **proxy_protocol**;
+	listen 443 ssl **proxy_protocol**;
 
 ##### Default file (sites-available/default)  - Example File
 ###### In Bold
