@@ -6,6 +6,7 @@ Se configura el forward-for y send-proxy del lado HAProxy
 Se configura la ip del balanceador y el proxy-protocol del lado nginx
 
 [Modificaciones en HAProxy](./files/spa/haproxy.md)
+
 [Modificaciones en Nginx](./files/spa/nginx.md)
 
 # Real Request IP (Client) From HAProxy(as load balancer) to Nginx
@@ -16,6 +17,7 @@ From the HAProxy side, enable the forward-for and the send-proxy
 From nginx side, add the balancer ip and enable the proxy-protocol
 
 [HAProxy side](./files/eng/haproxy-side.md)
+
 [Nginx servers side](./files/eng/nginx-side.md)
 
 ## LICENCIA/LICENSE
