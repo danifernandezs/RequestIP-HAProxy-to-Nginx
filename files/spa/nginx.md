@@ -16,7 +16,6 @@ En el apartado de configuración de los virtual host, cambiamos default_server p
 	listen 443 ssl proxy_protocol;
 
 ##### Fichero default (sites-available/default) de ejemplo
-###### En negrita
 ----
     #
     # Default server configuration

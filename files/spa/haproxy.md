@@ -10,7 +10,6 @@ Debemos agregar tanto al balanceo http como al https la siguiente opción
 	option forwardfor
 
 ##### Ejemplo de frontend
-###### En negrita
 ----
 	frontend http-in
 	bind XXX.XXX.XXX.XXX:80
@@ -32,7 +31,6 @@ Debemos agregar tanto al balanceo http como al https la siguiente opción
 Habilitamos **send-proxy** en los servidores a balancear
   
 ##### Ejemplo de backend
-###### En negrita
 ----  
 	backend http-in-backend
 	balance roundrobin

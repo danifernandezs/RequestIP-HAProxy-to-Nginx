@@ -10,7 +10,6 @@ To the http and the https frontend configuration, we add the option:
 	option forwardfor
 
 ##### frontend example
-###### In bold
 ----
 	frontend http-in
 	bind XXX.XXX.XXX.XXX:80
@@ -31,7 +30,6 @@ To the http and the https frontend configuration, we add the option:
 Enable the **send-proxy** to the balanced server
   
 ##### backend example
-###### In bold
 ----  
 	backend http-in-backend
 	balance roundrobin

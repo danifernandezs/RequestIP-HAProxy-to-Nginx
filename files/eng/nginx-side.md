@@ -16,7 +16,6 @@ At virtual host area, change the default_server with **proxy_protocol**
 	listen 443 ssl proxy_protocol;
 
 ##### Default file (sites-available/default)  - Example File
-###### In Bold
 ----
     #
     # Default server configuration
