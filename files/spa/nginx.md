@@ -6,13 +6,14 @@ Necesitamos configurar la **ip del balanceador** en el servidor nginx y configur
 
 Al inicio del fichero configuramos la ip que entrega nuestro balanceador e indicamos que desde esa ip recibiremos tráfico bajo proxy_protocol.
 
-	**set_real_ip_from** XXX.XXX.XXX.XXX;      **#IP del balanceador HAProxy**
-	real_ip_header **proxy_protocol**;
+	set_real_ip_from XXX.XXX.XXX.XXX;      #IP del balanceador HAProxy
+	real_ip_header proxy_protocol;
 
 En el apartado de configuración de los virtual host, cambiamos default_server por **proxy_protocol**
 
-	listen 80 **proxy_protocol**;
-	listen 443 ssl **proxy_protocol**;
+
+	listen 80 proxy_protocol;
+	listen 443 ssl proxy_protocol;
 
 ##### Fichero default (sites-available/default) de ejemplo
 ###### En negrita
